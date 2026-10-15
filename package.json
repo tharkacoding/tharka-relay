@@ -1,0 +1,10 @@
+{
+  "name": "tharka-relay",
+  "version": "1.0.0",
+  "description": "Tiny relay: phone (APK/browser) <-> this server <-> your PC (outbound WebSocket). Stores nothing.",
+  "main": "server.js",
+  "private": true,
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "ws": "^8.22.0" }
+}

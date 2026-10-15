@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: tharka-relay
+    runtime: node
+    plan: free
+    rootDir: relay
+    buildCommand: npm install --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      - key: PC_TOKEN
+        generateValue: true
+      - key: PHONE_TOKEN
+        generateValue: true
